@@ -41,6 +41,25 @@ This chatbot model is trained on a custom dataset consisting of **1,000 prompt-r
    ```powershell
    python chatbot.py
    ```
+   
+## Dataset
+Dataset for this model was custom made, ai generated specifically on the topic of Indian Heritage. It is present in json format and not uploaded on github due to it's large size as it contains upto 1000 prompt-response pairs. Sample of the file is given below:
+```
+[
+    {
+        "prompt": "Which dynasty was responsible for Brihadeeswarar Temple?",
+        "response": "It was built during the Chola dynasty."
+    },
+    {
+        "prompt": "Who built Ajanta Caves?",
+        "response": "Ajanta Caves was built by Buddhist Monks."
+    },
+    {
+        "prompt": "Tell me an interesting fact about Charminar.",
+        "response": "It was built to commemorate the end of a deadly plague in Hyderabad."
+    }
+]
+```
 
 ## Chatbot Response Issues
 The chatbot produces incoherent responses due to **insufficient training data and the limited capacity of GPT-2**. Here are some example interactions:
